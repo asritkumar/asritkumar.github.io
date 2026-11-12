@@ -127,30 +127,18 @@ nav {
 /* PROFILE HEADER */
 
 .profile-header {
-  display: grid;
-  grid-template-columns: 270px 1fr;
-  gap: 38px;
-  background: white;
-  padding: 28px;
-  border: 1px solid #e0e3e8;
-  border-radius: 9px;
-  margin-bottom: 25px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 38px;
+    align-items: center;
 }
 
 .profile-photo {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  background: #101c2e;
-  border-radius: 7px;
-  border: 1px solid #42baff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9bd8ff;
-  text-align: center;
-  padding: 20px;
-  font-size: 18px;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px;
 }
 
 .profile-label {
@@ -377,7 +365,7 @@ ASRIT <span>FILMS</span>
 
 <section class="profile-header">
 
-<img src="../Asritkumar S.jpg" alt="Asritkumar S">
+<img class="profile-photo" src="../Asritkumar S.jpg" alt="Asritkumar S">
 
 <div>
 
