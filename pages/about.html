@@ -16,33 +16,50 @@
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://asritkumar.github.io/pages/about.html">
 
+
+<!-- ASRITKUMAR S - OFFICIAL PROFILE PAGE STRUCTURED DATA -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://asritkumar.github.io/#person",
-  "name": "Asritkumar S",
-  "url": "https://asritkumar.github.io/",
-  "jobTitle": [
-    "Actor",
-    "Director",
-    "Writer",
-    "Filmmaker",
-    "Digital Creator"
-  ],
-  "birthDate": "2012-02-07",
-  "birthPlace": {
-    "@type": "Place",
-    "name": "Madurai, Tamil Nadu, India"
-  },
-  "nationality": {
-    "@type": "Country",
-    "name": "India"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "ASRIT FILMS"
-  }
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://asritkumar.github.io/pages/about.html#profilepage",
+      "url": "https://asritkumar.github.io/pages/about.html",
+      "name": "Asritkumar S - Official Biography",
+      "description": "Official biography and professional profile of Asritkumar S, actor, director, writer and filmmaker.",
+      "mainEntity": {
+        "@id": "https://asritkumar.github.io/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://asritkumar.github.io/#person",
+      "name": "Asritkumar S",
+      "url": "https://asritkumar.github.io/pages/about.html",
+      "image": "https://asritkumar.github.io/pages/Asritkumar%20S.jpg",
+      "description": "Actor, director, writer, filmmaker and digital creator associated with ASRIT FILMS.",
+      "jobTitle": [
+        "Actor",
+        "Director",
+        "Writer",
+        "Filmmaker",
+        "Digital Creator"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/asritkumar_official/",
+        "https://www.youtube.com/@asritkumar_official",
+        "https://x.com/iamasritkumar",
+        "https://www.imdb.com/name/nm19036009/",
+        "https://www.wikidata.org/wiki/Q141795389",
+        "https://www.themoviedb.org/person/6564837-asritkumar-s"
+      ],
+      "affiliation": {
+        "@id": "https://asritkumar.github.io/#organization"
+      }
+    }
+  ]
 }
 </script>
 
