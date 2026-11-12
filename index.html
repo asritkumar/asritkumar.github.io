@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Asritkumar S | Official Website</title>
+  <meta name="description" content="Official website of Asritkumar S, filmmaker, actor and founder of ASRIT FILMS. Explore films, projects and collaborators.">
+  <meta name="author" content="Asritkumar S">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080d18">
+
+  <link rel="canonical" href="https://asritkumar.github.io/">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #080d18;
+      --panel: #101a2b;
+      --blue: #42baff;
+      --white: #f4f7ff;
+      --muted: #a9b6ca;
+      --border: #263750;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    header {
+      height: 76px;
+      background: #070b13;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .brand span { color: var(--blue); }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 14px;
+    }
+
+    .navlinks a:hover { color: var(--blue); }
+
+    .hero {
+      min-height: 540px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.5fr;
+      align-items: center;
+      gap: 65px;
+      padding: 65px 0;
+      background:
+        radial-gradient(ellipse at 80% 45%, #153252 0%, transparent 60%);
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 310px;
+      aspect-ratio: 3 / 4;
+      margin: auto;
+      border: 1px solid #5caeff;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #193958, #101827);
+      box-shadow: 0 0 35px #1689ff30;
+      display: grid;
+      place-items: center;
+      color: #91cfff;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      letter-spacing: 5px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .tagline {
+      color: #a6dcff;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 600px;
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 12px 23px;
+      border: 1px solid var(--blue);
+      border-radius: 7px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .btn.primary {
+      background: var(--blue);
+      color: #06101d;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px #42baff35;
+    }
+
+    section { padding: 45px 0; }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 24px;
+    }
+
+    .section-head h2 {
+      font-size: 27px;
+    }
+
+    .section-head a {
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 30px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .poster {
+      min-height: 300px;
+      border-radius: 9px;
+      background: linear-gradient(145deg, #18283d, #080d18);
+      display: grid;
+      place-items: center;
+      color: #8fbfe5;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .feature-info {
+      align-self: center;
+    }
+
+    .feature-info h3 {
+      font-size: 30px;
+      margin: 12px 0;
+    }
+
+    .feature-info p {
+      color: var(--muted);
+      margin: 12px 0;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 11px;
+      border-radius: 20px;
+      background: #153c32;
+      color: #75e4b1;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .status.planned {
+      background: #44331b;
+      color: #ffcb75;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+    }
+
+    .card-image {
+      aspect-ratio: 16 / 10;
+      background: linear-gradient(135deg, #1a3450, #101827);
+      display: grid;
+      place-items: center;
+      color: #83bce9;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .card-info { padding: 17px; }
+
+    .card-info h3 { font-size: 18px; }
+
+    .card-info p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+    }
+
+    .crew-card {
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 13px;
+    }
+
+    .crew-photo {
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(145deg, #1a3450, #101827);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #83bce9;
+      margin-bottom: 12px;
+    }
+
+    .crew-card p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .about-brand {
+      background: linear-gradient(110deg, #101b2e, #102b47);
+      border: 1px solid var(--border);
+      padding: 38px;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .about-brand h2 {
+      font-size: 30px;
+      letter-spacing: 4px;
+    }
+
+    .about-brand p {
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer a { color: var(--blue); }
+
+    @media(max-width: 800px) {
+      .navlinks { gap: 12px; font-size: 12px; }
+      .hero { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+      .intro { margin: auto; }
+      .actions { justify-content: center; }
+      .feature { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .crew-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media(max-width: 520px) {
+      header { height: auto; padding: 15px 0; }
+      nav { flex-direction: column; }
+      .navlinks { flex-wrap: wrap; justify-content: center; }
+      .grid { grid-template-columns: 1fr; }
+      .crew-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-head h2 { font-size: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="brand">ASRIT <span>FILMS</span></a>
+
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/filmography.html">Films</a>
+      <a href="pages/crew.html">Crew</a>
+      <a href="pages/projects.html">Projects</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="container">
+    <section class="hero">
+
+      <div class="portrait">
+        YOUR<br>PHOTOGRAPH<br>WILL APPEAR HERE
+      </div>
+
+      <div>
+        <div class="eyebrow">FILMMAKER · ACTOR · STORYTELLER</div>
+
+        <h1>Asritkumar <span style="color:#42baff">S</span></h1>
+
+        <div class="tagline">Stories · Characters · Cinema</div>
+
+        <p class="intro">
+          Welcome to the official website of Asritkumar S.
+          Discover his filmmaking journey, filmography,
+          creative projects and the people behind ASRIT FILMS.
+        </p>
+
+        <div class="actions">
+          <a href="pages/about.html" class="btn primary">Explore Biography</a>
+          <a href="pages/filmography.html" class="btn">Explore Films</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Film</h2>
+        <a href="pages/filmography.html">Full Filmography →</a>
+      </div>
+
+      <div class="feature">
+        <div class="poster">
+          FIRST FILM<br>OFFICIAL POSTER
+        </div>
+
+        <div class="feature-info">
+          <span class="status">Currently Shooting</span>
+          <h3>Thalaiyila Poduvom Dove'u Poiyee Duchu Da En Love'u</h3>
+          <p>Directed by Asritkumar S</p>
+          <p>
+            The first film in Asritkumar S's filmography.
+            The film is currently in shooting, and its trailer
+            has been released.
+          </p>
+          <a href="pages/thalaiyila-poduvom.html" class="btn primary">
+            Movie Details →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Filmography</h2>
+        <a href="pages/filmography.html">View All →</a>
+      </div>
+
+      <div class="grid">
+
+        <a href="pages/thalaiyila-poduvom.html" class="card">
+          <div class="card-image">FIRST FILM POSTER</div>
+          <div class="card-info">
+            <h3>Thalaiyila Poduvom...</h3>
+            <p>Currently Shooting · Trailer Released</p>
+          </div>
+        </a>
+
+        <a href="pages/the-last-package.html" class="card">
+          <div class="card-image">THE LAST PACKAGE POSTER</div>
+          <div class="card-info">
+            <h3>The Last Package</h3>
+            <p>Planned · Shooting Not Started</p>
+          </div>
+        </a>
+
+        <a href="pages/drops-of-revenge.html" class="card">
+          <div class="card-image">DROPS OF REVENGE POSTER</div>
+          <div class="card-info">
+            <h3>Drops of Revenge</h3>
+            <p>Upcoming Project · Tentative 2029</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Crew</h2>
+        <a href="pages/crew.html">Meet the Team →</a>
+      </div>
+
+      <div class="crew-grid">
+
+        <a href="pages/crew/anishkumar.html" class="crew-card">
+          <div class="crew-photo">PHOTO</div>
+          <h3>Anishkumar</h3>
+          <p>Music Director</p>
+        </a>
+
+        <a href="pages/crew/sai-sharvesh.html" class="crew-card">
+          <div class="crew-photo">PHOTO</div>
+          <h3>Sai Sharvesh</h3>
+          <p>Co-Writer</p>
+        </a>
+
+        <a href="pages/crew/yashwanth.html" class="crew-card">
+          <div class="crew-photo">PHOTO</div>
+          <h3>Yashwanth</h3>
+          <p>Co-Editor</p>
+        </a>
+
+        <a href="pages/crew/sukesh.html" class="crew-card">
+          <div class="crew-photo">PHOTO</div>
+          <h3>Sukesh</h3>
+          <p>Special Thanks</p>
+        </a>
+
+        <a href="pages/crew/jayesh.html" class="crew-card">
+          <div class="crew-photo">PHOTO</div>
+          <h3>Jayesh</h3>
+          <p>Special Thanks</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="about-brand">
+        <h2>ASRIT FILMS</h2>
+        <p>A creative space for stories, films and limitless imagination.</p>
+        <br>
+        <a href="pages/about-asrit-films.html" class="btn">
+          Discover ASRIT FILMS →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 ASRIT FILMS. All Rights Reserved.</p>
+    <p>Dream · Create · Inspire</p>
+    <p><a href="pages/contact.html">Contact</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
