@@ -335,127 +335,102 @@
       .section-head h2 { font-size: 22px; }
     }
   </style>
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://github.io",
-        "url": "https://asritkumar.github.io/",
-        "name": "Asritkumar S | Official Website",
-        "publisher": {
-          "@id": "https://github.io"
-        }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://github.io",
-        "name": "Asritkumar S",
-        "url": "https://asritkumar.github.io/",
-        "image": "https://github.io",
-        "birthDate": "2012-02-07",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Madurai, Tamil Nadu, India"
-        },
-        "nationality": "Indian",
-        "jobTitle": [
-          "Actor",
-          "Director",
-          "Writer",
-          "Filmmaker",
-          "Digital Creator"
-        ],
-        "description": "Official profile of Asritkumar S, Indian independent digital creator, actor, director, screenwriter, and founder of ASRITFILMS.",
-        "worksFor": {
-          "@id": "https://github.io"
-        },
-        "sameAs": [
-          "https://instagram.com",
-          "https://youtube.com",
-          "https://x.com",
-          "https://www.imdb.com/name/nm19036009/",
-          "https://www.wikidata.org/wiki/Q141795389",
-          "https://www.themoviedb.org/person/6564837-asritkumar-s",
-          "https://filmfreeway.com"
-        ]
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://github.io",
-        "name": "ASRITFILMS",
-        "alternateName": "ASRIT FILMS",
-        "url": "https://asritkumar.github.io/",
-        "description": "Independent film production house and creative space founded by Asritkumar S.",
-        "founder": {
-          "@id": "https://github.io"
-        },
-        "sameAs": [
-          "https://instagram.com",
-          "https://youtube.com"
-        ]
-      },
-      {
-        "@type": "Movie",
-        "@id": "https://github.io",
-        "name": "Thalaiyila Poduvom Dove'u Poiyee Duchu Da En Love'u",
-        "url": "https://github.io",
-        "inLanguage": "ta",
-        "genre": ["Science Fiction", "Romance", "Short Film"],
-        "dateCreated": "2026",
-        "description": "A Tamil sci-fi romantic drama short film written, directed, and starring Asritkumar S.",
-        "director": {
-          "@id": "https://github.io"
-        },
-        "author": {
-          "@id": "https://github.io"
-        },
-        "actor": {
-          "@id": "https://github.io"
-        },
-        "productionCompany": {
-          "@id": "https://github.io"
-        },
-        "contributor": [
-          {
-            "@type": "Person",
-            "name": "Anishkumar",
-            "jobTitle": "Music Director"
-          },
-          {
-            "@type": "Person",
-            "name": "Sai Sharvesh",
-            "jobTitle": "Co-Writer"
-          },
-          {
-            "@type": "Person",
-            "name": "Yashwanth",
-            "jobTitle": "Co-Editor"
-          }
-        ],
-        "sameAs": [
-          "https://imdb.com",
-          "https://www.wikidata.org/wiki/Q141795451",
-          "https://www.themoviedb.org/movie/1803107-thalaiyila-poduvom-dove-u-poiyee-duchu-da-en-love-u"
-        ]
-      },
-      {
-        "@type": "Movie",
-        "@id": "https://github.io",
-        "name": "The Last Package",
-        "url": "https://github.io",
-        "description": "Upcoming film project by Asritkumar S and ASRITFILMS.",
-        "director": {
-          "@id": "https://github.io"
-        },
-        "productionCompany": {
-          "@id": "https://github.io"
-        }
+    
+<!-- ASRIT FILMS: COMPLETE CONNECTED ENTITY SCHEMA -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://asritkumar.github.io/#person",
+      "name": "Asritkumar S",
+      "url": "https://asritkumar.github.io/pages/about.html",
+      "mainEntityOfPage": "https://asritkumar.github.io/pages/about.html",
+      "image": "https://asritkumar.github.io/pages/Asritkumar%20S.jpg",
+      "description": "Actor, director, writer and independent filmmaker associated with ASRIT FILMS.",
+      "jobTitle": [
+        "Actor",
+        "Film Director",
+        "Writer",
+        "Filmmaker"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/asritkumar_official/",
+        "https://www.youtube.com/@asritkumar_official",
+        "https://x.com/iamasritkumar",
+        "https://www.imdb.com/name/nm19036009/",
+        "https://www.wikidata.org/wiki/Q141795389",
+        "https://www.themoviedb.org/person/6564837-asritkumar-s"
+      ],
+      "affiliation": {
+        "@id": "https://asritkumar.github.io/#organization"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://asritkumar.github.io/#organization",
+      "name": "ASRIT FILMS",
+      "url": "https://asritkumar.github.io/",
+      "description": "Independent film production identity associated with Asritkumar S.",
+      "sameAs": [
+        "https://www.instagram.com/asritfilms/",
+        "https://www.youtube.com/@asritfilms"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://asritkumar.github.io/#website",
+      "url": "https://asritkumar.github.io/",
+      "name": "Asritkumar S | ASRIT FILMS",
+      "publisher": {
+        "@id": "https://asritkumar.github.io/#organization"
+      },
+      "about": [
+        {
+          "@id": "https://asritkumar.github.io/#person"
+        },
+        {
+          "@id": "https://asritkumar.github.io/#organization"
+        }
+      ]
+    },
+    {
+      "@type": "Movie",
+      "@id": "https://asritkumar.github.io/pages/thalaiyila-poduvom.html#movie",
+      "name": "Thalaiyila Poduvom Dove'u Poiyee Duchu Da En Love'u",
+      "alternateName": "A Time Loop Love Story",
+      "url": "https://asritkumar.github.io/pages/thalaiyila-poduvom.html",
+      "description": "A Tamil independent time-loop love story presented by ASRIT FILMS.",
+      "sameAs": [
+        "https://www.imdb.com/title/tt49647739/",
+        "https://www.themoviedb.org/movie/1803107-thalaiyila-poduvom-dove-u-poiyee-duchu-da-en-love-u",
+        "https://www.wikidata.org/wiki/Q141795451"
+      ],
+      "actor": {
+        "@id": "https://asritkumar.github.io/#person"
+      },
+      "director": [
+        {
+          "@id": "https://asritkumar.github.io/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Sai Sharvesh"
+        }
+      ],
+      "productionCompany": {
+        "@id": "https://asritkumar.github.io/#organization"
+      },
+      "musicBy": {
+        "@type": "Person",
+        "name": "Anish Kumar"
+      }
+    }
+  ]
+}
+</script>
 
 </head>
 
