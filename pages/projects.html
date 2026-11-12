@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | ASRITFILMS</title>
+<meta name="description" content="Explore film projects developed and produced under ASRITFILMS.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080f1c;
+    color: #ffffff;
+}
+
+header {
+    background: #0d192a;
+    border-bottom: 1px solid #263a53;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #36b9ff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+nav a {
+    color: #b9c8d9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #36b9ff;
+}
+
+.hero {
+    padding: 85px 8% 65px;
+    background: linear-gradient(120deg, #10243d, #080f1c);
+    border-bottom: 1px solid #263a53;
+}
+
+.hero-label {
+    color: #36b9ff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #a9bacd;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #263a53;
+    padding-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+}
+
+.project-count {
+    color: #36b9ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: #101c2e;
+    border: 1px solid #263a53;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #36b9ff;
+    transform: translateY(-3px);
+}
+
+.project-poster {
+    min-height: 310px;
+    background: linear-gradient(145deg, #172e49, #080f1c);
+    border: 1px solid #304b69;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.project-poster .small {
+    color: #36b9ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.project-poster h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.project-poster .bottom {
+    color: #8fa5bc;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 22px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-number {
+    color: #36b9ff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+}
+
+.project-info h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.genre {
+    color: #36b9ff;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #aebed0;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.status {
+    display: inline-block;
+    width: fit-content;
+    padding: 8px 13px;
+    border: 1px solid #806b36;
+    border-radius: 4px;
+    color: #e6c875;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.details {
+    border-top: 1px solid #263a53;
+    padding-top: 16px;
+    color: #8fa5bc;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.details strong {
+    color: #ffffff;
+}
+
+footer {
+    background: #0d192a;
+    border-top: 1px solid #263a53;
+    padding: 25px;
+    text-align: center;
+    color: #7f91a6;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-poster {
+        min-height: 250px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ASRITFILMS</div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">Biography</a>
+        <a href="filmography.html">Films</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="crew.html">Crew</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-label">ASRIT FILMS</div>
+    <h1>Our Projects</h1>
+    <p>
+        Discover the stories and cinematic projects being developed
+        under ASRIT FILMS. Every project represents a new creative
+        journey in independent filmmaking.
+    </p>
+</section>
+
+<main>
+
+    <div class="section-heading">
+        <h2>Projects in Development</h2>
+        <span class="project-count">01 PROJECT</span>
+    </div>
+
+    <article class="project-card">
+
+        <div class="project-poster">
+            <div class="small">ASRITFILMS PRESENTS</div>
+            <h3>THE LAST<br>PACKAGE</h3>
+            <div class="bottom">A CINEMATIC THRILLER</div>
+        </div>
+
+        <div class="project-info">
+            <div class="project-number">PROJECT 01</div>
+
+            <h2>THE LAST PACKAGE</h2>
+
+            <div class="genre">Thriller · Mystery</div>
+
+            <div class="status">PLANNED</div>
+
+            <p class="description">
+                A Tamil thriller project developed under ASRITFILMS.
+                The story follows a mysterious package that draws its
+                recipient into a dangerous chain of events.
+            </p>
+
+            <div class="details">
+                <strong>Production:</strong> ASRITFILMS<br>
+                <strong>Written & Directed by:</strong> Asritkumar S<br>
+                <strong>Project Type:</strong> Feature Film
+            </div>
+        </div>
+
+    </article>
+
+</main>
+
+<footer>
+    © 2026 ASRITFILMS. All Rights Reserved.
+</footer>
+
+</body>
+</html>
