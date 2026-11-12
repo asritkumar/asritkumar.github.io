@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | ASRITFILMS</title>
+<meta name="description" content="Explore film posters, behind-the-scenes photographs and cinematic moments from ASRITFILMS.">
+<meta name="author" content="ASRITFILMS">
+<meta name="robots" content="index, follow">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080f1c;
+    color: #ffffff;
+}
+
+header {
+    background: #0d192a;
+    border-bottom: 1px solid #263a53;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #36b9ff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+nav a {
+    color: #b9c8d9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #36b9ff;
+}
+
+.hero {
+    padding: 85px 8% 70px;
+    background: linear-gradient(120deg, #10243d, #080f1c);
+    border-bottom: 1px solid #263a53;
+}
+
+.hero-label {
+    color: #36b9ff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #a9bacd;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.gallery-section {
+    margin-bottom: 65px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #263a53;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+}
+
+.section-heading span {
+    color: #36b9ff;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    min-height: 260px;
+    background: linear-gradient(145deg, #172e49, #0d192a);
+    border: 1px solid #263a53;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    border-color: #36b9ff;
+    transform: translateY(-4px);
+}
+
+.gallery-placeholder {
+    padding: 25px;
+}
+
+.gallery-placeholder .number {
+    display: block;
+    color: #36b9ff;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.gallery-placeholder h3 {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.gallery-placeholder p {
+    color: #8fa5bc;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.gallery-note {
+    margin-top: 35px;
+    padding: 22px;
+    background: #101c2e;
+    border-left: 3px solid #36b9ff;
+    color: #aebed0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer {
+    background: #0d192a;
+    border-top: 1px solid #263a53;
+    padding: 25px;
+    text-align: center;
+    color: #7f91a6;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        min-height: 230px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ASRITFILMS</div>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">Biography</a>
+        <a href="filmography.html">Films</a>
+        <a href="projects.html">Projects</a>
+        <a href="crew.html">Crew</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-label">THE VISUAL ARCHIVE</div>
+    <h1>Gallery</h1>
+    <p>
+        A visual collection of cinematic creations, film promotions,
+        production moments and the journey of ASRITFILMS.
+    </p>
+</section>
+
+<main>
+
+    <section class="gallery-section">
+        <div class="section-heading">
+            <h2>Film Posters</h2>
+            <span>01 COLLECTION</span>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">POSTER 01</span>
+                    <h3>Thalaiyila Poduvom Dove'u Poiyee Duchu Da En Love'u</h3>
+                    <p>Official Film Poster</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">POSTER 02</span>
+                    <h3>THE LAST PACKAGE</h3>
+                    <p>Project Artwork</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">POSTER 03</span>
+                    <h3>ASRITFILMS</h3>
+                    <p>Production Artwork</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-heading">
+            <h2>Behind the Scenes</h2>
+            <span>02 COLLECTION</span>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">BTS 01</span>
+                    <h3>ON THE SET</h3>
+                    <p>Behind-the-scenes photograph</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">BTS 02</span>
+                    <h3>FILMMAKING</h3>
+                    <p>Production moment</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">BTS 03</span>
+                    <h3>CREATIVE PROCESS</h3>
+                    <p>On-set photography</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-heading">
+            <h2>Promotional Stills</h2>
+            <span>03 COLLECTION</span>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">STILL 01</span>
+                    <h3>CINEMATIC FRAME</h3>
+                    <p>Film promotional still</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">STILL 02</span>
+                    <h3>CHARACTER LOOK</h3>
+                    <p>Promotional photograph</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <span class="number">STILL 03</span>
+                    <h3>FILM MOMENTS</h3>
+                    <p>Selected cinematic still</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="gallery-note">
+        This gallery is being developed as the visual archive of ASRITFILMS.
+        Official photographs and artwork can be added as they become available.
+    </div>
+
+</main>
+
+<footer>
+    © 2026 ASRITFILMS. All Rights Reserved.
+</footer>
+
+</body>
+</html>
