@@ -1,2 +1,2 @@
-# https-asritkumar.github.io
+# asritkumar.github.io
 Official website of Asritkumar S and ASRIT FILMS
